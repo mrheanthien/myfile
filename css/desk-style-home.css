@@ -1,0 +1,67 @@
+.content-home{
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+.home-title{
+	color: #0D3280;
+	font-size: 20px;
+	text-align: center;
+	padding: 18px 0;
+}
+.home-title span{
+	border-radius: 5px;
+	border: 1px solid #0D3280;
+	padding: 10px 50px;
+}
+.home-left{
+	float: left;
+	width: 60%;
+	height: auto;
+}
+.home-right{
+	float: right;
+	width: 40%;
+	height: auto;
+}
+.home-gellery{
+	float: left;
+	margin: 0;
+	padding: 10px 0;
+	width: 100%;
+	height: auto;
+	background: #F6F6F6;
+}
+.g-left{
+	float: left;
+	width: 30%;
+	height: auto;
+	padding: 10PX 0;
+}
+.g-center{
+	float: left;
+	width: 33%;
+	height: auto;
+	margin: 0 22px;
+	padding: 10PX 0;
+}
+.g-right{
+	float: right;
+	width: 33%;
+	height: auto;
+	padding: 10PX 0;
+}
+.title-small{
+	font-size: 18px;
+	color: #0D3280;
+	font-weight: bold;
+}
+.home-tour{
+	float: left;
+	margin: 0;
+	padding: 10px 0;
+	width: 100%;
+	height: auto;
+}

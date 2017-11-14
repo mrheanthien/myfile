@@ -1,0 +1,421 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+	color: #333333;
+	font-size: 15px;
+	font-family: 'Arial';
+}
+.preload *{
+	-webkit-transition: none!important;
+	   -moz-transition: none!important;
+	    -ms-transition: none!important;
+	     -o-transition: none!important;
+	        transition: none!important;
+}
+a,
+a:hover,
+a:active, 
+a:focus{
+   outline: 0 !important;
+   text-decoration: none;
+}
+textarea, 
+input {
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 20px;
+	outline: none; 
+	box-shadow:none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;  
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0
+}
+a[href=""]{ pointer-events: none }
+a[href="#"]{ cursor: default }
+button::-moz-focus-inner{ border: 0 } /* Remove dot */
+img{ max-width: 100%; line-height: 0 } /* Limit max width of every image */
+ul li{ list-style-type: none }
+.section{ 
+	padding: 0 0 20px; 
+	width: 100%; 
+	float: left
+}
+.container{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0
+}
+.alignleft {
+	margin: 5px 15px 0 0;
+	float: left
+}
+.alignright {
+	margin: 5px 0 0 15px;
+	float: right
+}
+
+/* -- slide align center -- */
+.slick-track {
+    text-align: center;
+	margin: 0 auto;
+	overflow: hidden
+}
+.slick-slide {
+    float: none;
+    display: inline-block
+}
+.slick-slider .slick-list {
+    opacity: 0;
+    position: absolute;
+}
+.slick-slider.slick-initialized {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.slick-slider.slick-initialized .slick-list {
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.2s ease-in 0s;
+}
+/* ============================================================================
+   Blog Header 
+   ============================================================================ */
+ .header-fixed {
+ 	background: #F6F6F6;
+ }
+/* -- header top -- */
+.header .container > .header-top{
+	height: 40px;
+	width: 100%;
+	padding: 0 15px
+}
+.header .container .header-top .align-left{
+	float: left;
+	width: auto;
+}
+.header .container .header-top .align-left ul > li{
+	float: left;
+	line-height: 40px
+}
+.header .container .header-top .align-left ul > li > a{
+	color: #666D71;
+	margin-right: 40px;
+	font-size: 14px
+}
+
+.header .container .header-top .align-right{
+	float: right;
+}
+.header .container .header-top .align-right ul > li{
+	float: left;
+	line-height: 40px;
+	margin-left: 15px;
+}
+.header .container .header-top .align-right ul > li > span{
+	background-image: url("../images/contact.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 40px;
+    width: 30px;
+}
+.header .container .header-top .align-right ul > li > span.phone{ background-position: -50px -6px }
+.header .container .header-top .align-right ul > li > span.email{ background-position: -93px -6px }
+.header .container .header-top .align-right ul > li,
+.header .container .header-top .align-right ul > li> a{
+	color: #666D71;
+	font-size: 14px
+}
+.header .container .header-top .align-right ul > li.socail{ margin-left: 10px }
+.header .container .header-top .align-right ul > li.socail > ul{
+	float: left;
+	padding: 10px 0 
+}
+.header .container .header-top .align-right ul > li.socail > ul li{
+	width: 20px;
+	height: 20px;
+	margin-left: 8px
+}
+.header .container .header-top .align-right ul > li.socail > ul li img{ float: left }
+
+/* -- header bottom -- */
+.header-bottom-bg {
+	/*background: #3B5998;*/
+	background: #0D3280;
+	width: 100%;
+	float: left;
+}
+.header .container .header-bottom .main-logo,
+.header .container .header-bottom .main-logo img{ float: left }
+
+.header .container .header-bottom .main-menu{ 
+	float: left;
+	width: 100%;
+	height: 60px;
+	line-height: 60px
+}
+.header .container .header-bottom .main-menu .main-menu-list{ 
+	width: 94%;
+	float: left;
+}
+.header .container .header-bottom .main-menu .main-menu-list ul li{
+	float: left;
+    margin: 0 10px;
+    width: auto
+}
+.header .container .header-bottom .main-menu .main-menu-list ul li span{
+	background-image: url("../images/menu-icon.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 60px;
+    width: 38px;
+}
+.header .container .header-bottom .main-menu .main-menu-list ul li a{
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+.header .container .header-bottom .main-menu .search-box{
+	float: right;
+}
+.header .container .header-bottom .main-menu .search-box span.search{
+	background: rgba(0, 0, 0, 0) url("../images/search.png") no-repeat scroll 5px 0;
+    color: transparent;
+    float: left;
+    height: 40px;
+    margin: 10px 0;
+    width: 100%
+}
+/* ============================================================================
+   Blog Content
+   ============================================================================ */
+/* -- alignleft -- */
+.section-alignleft{
+	width: 136px;
+	float: left;
+	background-color: transparent;
+	margin-right: 22px
+}
+.section-alignleft .categories-title{
+	border: 1px solid #eee;
+	background: #F2F2F2;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px
+}
+.section-alignleft .categories-title h3{
+    font-weight: 100;
+	height: 46px;
+    line-height: 46px;
+    text-transform: uppercase;
+	font-size: 12px
+}
+.section-alignleft .categories-title ul{
+	float: left;
+	width: 100%
+}
+.section-alignleft .categories-title ul > li{
+	border-bottom: 1px solid #eee;
+	float: left;
+	height: 38px
+}
+.section-alignleft .categories-title ul > li:last-child{ border-bottom: 0 }
+.section-alignleft .categories-title h3 span{
+	background-image: url("../images/menu-left-icon.png");
+    float: left;
+    height: 42px;
+    padding-left: 36px;
+    width: 15px;
+}
+.section-alignleft .categories-title h3 span.phone{ background-position: -6px center }
+.section-alignleft .categories-title h3 span.watches{ background-position: -53px center }
+.section-alignleft .categories-title h3 span.tablets{ background-position: -101px center }
+.section-alignleft .categories-title h3 span.speakers{ background-position: -148px center }
+.section-alignleft .categories-title h3 span.accessories{ background-position: -208px center }
+
+
+/* -- alignright -- */
+.section-alignright{
+	width: 174px;
+	float: left;
+	background-color: transparent;
+}
+.section-alignright .ads-thumbnail{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px
+}
+/* -- aligncenter -- */
+.section-aligncenter{
+	width: 670px ;
+	float: left;
+	margin-right: 22px;
+	background-color: transparent;
+}
+.section-aligncenter .section-center{
+	margin-bottom: 30px;
+	float: left;
+	width: 100%
+}
+.section-aligncenter .content-title{
+	border: 1px solid #eee;
+	background: #F2F2F2;
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+	height: 48px;
+}
+.section-aligncenter .content-title h3{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 48px;
+    padding: 0 15px;
+    text-transform: uppercase
+}
+.section-aligncenter .items-list{
+	float: left;
+	width: 100%
+}
+.section-aligncenter .items-list.two-item{
+	margin: 0 -5px
+}
+/* -- products two slide -- */
+.section-aligncenter .items-list .products-two-slide{
+	width: 100%;
+	float: left;
+	margin: 2px 5px 8px
+}
+.section-aligncenter .items-list .slick-slider.slick-initialized { margin: 0 -5px; }
+.section-aligncenter .items-list .products-list{
+	background: #fff;
+    border: 1px solid #eee;
+    float: left;
+    margin: 2px 5px 8px;
+    padding: 5px 0;
+    text-align: center;
+	width: 100%;
+}
+/* -- images hover -- */
+.hovereffect {
+	cursor: pointer;
+    display: inline-block;
+    float: none;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 132px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.hovereffect img {
+	max-height: 165px;
+    max-width:  172px;
+}
+.section-aligncenter .items-list .products-list:hover {
+	-webkit-box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.18);
+       -moz-box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.18);
+            box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.18)
+}
+.section-aligncenter .items-list .products-list:hover img {
+	    -ms-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	        transform:scale(1.05);
+	padding: 7px
+}
+.section-aligncenter .items-list .products-list,
+.section-aligncenter .items-list .products-list:hover,
+.section-aligncenter .items-list .products-list img,
+.section-aligncenter .items-list .products-list:hover img{
+	   -moz-transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+			transition:all .3s ease
+}
+
+.section-aligncenter .items-list .products-list img{ margin: 0 auto }
+.section-aligncenter .items-list .products-list h3{
+	font-size: 14px;
+	color: #333;
+	margin: 5px 0 0;
+	min-height: 34px
+}
+.section-aligncenter .items-list .products-list a {
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+.section-aligncenter .items-list .products-list a p{
+	padding: 5px 15px;
+	float: left;
+	width: 100%
+}
+/* ============================================================================
+   Blog Footer
+   ============================================================================ */
+.footer{
+	background: #0D3280 url(../images/images-footer.png) no-repeat 0px 180px;
+	float: left;
+	width: 100%;
+	height: 300px;
+}
+.footer-content{
+	width:100%;
+}
+.footer-content p{
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	padding: 10px 0px;
+}
+.footer-content a{
+	color: white;
+}
+.footer-alignleft {
+	float: left;
+	width: 40%;
+}
+.footer-alignright {
+	float: right;
+	width: 20%;
+}
+.footer-aligncenter{
+	float: left;
+	width: 40%;
+}
+.footer-bottom{
+	float: left;
+	background: #0D4390;
+	width:100%;
+	height: auto;
+}
+.footer-bottom p a{
+	color: white;
+	padding: 10px 5px;
+}
+.footer-bottom p{
+	padding: 10px 5px;
+}
+.read-more{
+ padding: 15px 0;
+}
+.read-more span{
+ width: 80px;
+ border-radius: 8px;
+ border: 1px solid #0D3280;
+ padding: 10px 18px;
+ color: #0D3280;
+ cursor: pointer;
+}
+.read-more span:hover{
+	color: white;
+	background: #0D3280;
+}
